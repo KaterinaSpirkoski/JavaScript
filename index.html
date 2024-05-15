@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+  </head>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    form {
+      background: #ddd;
+      padding: 2em;
+      border-radius: 2px;
+    }
+
+    .done {
+      color: green;
+      text-decoration: line-through;
+    }
+
+    button {
+      margin-left: 10px;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+  </style>
+  <body>
+    <form id="form" type="submit">
+      <label>Add a todo title:</label>
+      <br />
+      <input id="todoInput" type="text" name="todoInput" />
+      <button type="submit">Add</button>
+    </form>
+
+    <br />
+    <ul id="results"></ul>
+    <script src="index.js"></script>
+  </body>
+</html>
